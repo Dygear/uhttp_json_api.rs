@@ -202,7 +202,7 @@ impl<'a, S: Read> HttpRequest<'a, S> {
         let url = match target {
             RequestTarget::AbsPath =>
                 HttpResource::new(reqline.target),
-            RequestTarget::AbsURI =>
+            RequestTarget::AbsUri =>
                 // TODO: verify authority
                 HttpUri::new(reqline.target)
                     .map_err(|_| StatusCode::BadRequest)?.resource,
