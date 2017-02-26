@@ -11,7 +11,7 @@ adding it as a dependency in `Cargo.toml`:
 
 ```toml
 [dependencies]
-uhttp_json_api = "0.5.0"
+uhttp_json_api = "0.6.0"
 ```
 and importing it in the crate root:
 

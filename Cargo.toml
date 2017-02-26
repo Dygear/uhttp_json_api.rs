@@ -1,6 +1,6 @@
 [package]
 name = "uhttp_json_api"
-version = "0.5.0"
+version = "0.6.0"
 authors = ["Mick Koch <mick@kochm.co>"]
 description = "Utilities for JSON requests"
 license = "MIT"
