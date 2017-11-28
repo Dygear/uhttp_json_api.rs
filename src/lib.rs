@@ -21,7 +21,6 @@ extern crate uhttp_version;
 #[macro_use]
 extern crate serde_derive;
 
-use std::ascii::AsciiExt;
 use std::convert::TryFrom;
 use std::io::Read;
 
