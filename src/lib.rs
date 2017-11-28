@@ -342,7 +342,7 @@ mod test {
         }
 
         impl<'a> std::convert::TryFrom<HttpResource<'a>> for Route {
-            type Err = StatusCode;
+            type Error = StatusCode;
             fn try_from(r: HttpResource<'a>) -> HttpResult<Self> {
                 match r.path {
                     "/first" => Ok(Route::First),
