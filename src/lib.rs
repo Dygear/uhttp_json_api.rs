@@ -179,7 +179,7 @@ impl<'a, S: Read> HttpRequest<'a, S> {
 
     /// Try to extract a version, method, and route.
     pub fn route<'b, R>(&'b mut self) -> HttpResult<(HttpVersion, Method, R)>
-        where R: TryFrom<HttpResource<'b>, Err=StatusCode>
+        where R: TryFrom<HttpResource<'b>, Error=StatusCode>
     {
         let (reqline, rest) = RequestLine::new(&self.buf[..self.len])
             .map_err(|err| match err {
