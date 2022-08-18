@@ -1,11 +1,11 @@
 [package]
 name = "uhttp_json_api"
-version = "0.6.1"
-authors = ["Mick Koch <mick@kochm.co>"]
+version = "0.6.2"
+authors = ["Mick Koch <mick@kochm.co>", "Mark Tomlin <Dygear@gmail.com>"]
 description = "Utilities for JSON requests"
 license = "MIT"
 documentation = "https://docs.rs/uhttp_json_api"
-repository = "https://github.com/kchmck/uhttp_json_api.rs"
+repository = "https://github.com/Dygear/uhttp_json_api.rs"
 keywords = ["http", "json", "request", "api"]
 
 [dependencies]
@@ -15,15 +15,15 @@ serde_json = "0.9"
 subslice_index = "0.5.0"
 uhttp_body_bytes = "0.5.0"
 uhttp_chunked_bytes = "0.5.0"
-uhttp_content_encoding = "0.5.0"
+uhttp_content_encoding = {version = "0.5.1", git = "https://github.com/Dygear/uhttp_content_encoding.rs"}
 uhttp_media_type = "0.5.0"
 uhttp_method = "0.10.0"
 uhttp_request = "0.5.1"
 uhttp_request_target = "0.6.0"
 uhttp_status = "0.10.0"
-uhttp_transfer_encoding = "0.5.0"
+uhttp_transfer_encoding = {version = "0.5.1", git = "http://github.com/Dygear/uhttp_transfer_encoding.rs"}
 uhttp_uri = "0.5.1"
-uhttp_version = "0.6.0"
+uhttp_version = {version = "0.6.1", git = "https://github.com/Dygear/uhttp_version.rs.git"}
 
 [dev-dependencies]
 

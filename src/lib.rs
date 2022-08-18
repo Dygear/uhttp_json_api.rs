@@ -1,7 +1,5 @@
 //! This crate provides some utilities for reading HTTP JSON requests.
 
-#![feature(try_from)]
-
 extern crate serde;
 extern crate serde_json;
 extern crate subslice_index;
